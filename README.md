@@ -15,4 +15,4 @@ Generates certificates by printing name and college name on a certificate templa
 * Certificates will be populated in **generated_certificates** directory in project root.
 
 # Some useful info
-* use https://image-map.net for finding coords.
+* use https://image-map.net for finding coords in image.
