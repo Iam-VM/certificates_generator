@@ -14,5 +14,5 @@ Generates certificates by printing name and college name on a certificate templa
 ```python3 cert_generator.py```
 * Certificates will be populated in **generated_certificates** directory in project root.
 
-#Some useful info
+# Some useful info
 * use https://image-map.net for finding coords.
