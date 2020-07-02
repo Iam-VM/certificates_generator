@@ -29,7 +29,7 @@ def generate_certs(name, college_name) :
     d.text((name_coord_x-name_line_width/2, name_coord_y-name_line_height/2), name, fill=text_color, font=font_for_name)
     d.text((of_coord_x-of_line_width/2, of_coord_y-of_line_height/2), 'of', fill=text_color, font=font_for_of)
     d.text((college_name_coord_x-college_name_line_width/2, college_name_coord_y-college_name_line_height/2), college_name, fill=text_color, font=font_for_college_name)
-    image.save("./certs/" + name + ".pdf")
+    image.save("./generated_certificates/" + name + ".pdf")
     print('saving cert of: ' + name)
 
 
