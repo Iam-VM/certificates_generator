@@ -3,6 +3,8 @@ Generates certificates by printing name and college name on a certificate templa
 
 # Download Required libraries
 ```pip install pillow```
+
+
 ```pip install pandas```
 
 # Usage (with existing settings)
