@@ -2,10 +2,10 @@ from PIL import Image, ImageDraw, ImageFont
 import pandas as pd
 
 
-csv_data = pd.read_csv('names.csv')
-name_list = csv_data['Name'].to_list()
-college_name_list = csv_data['College'].to_list()
-data = zip(name_list, college_name_list)
+csv_data = pd.read_csv('cert_data.csv')
+event_names = csv_data['event_names'].to_list()
+name_list = csv_data['names'].to_list()
+data = zip(event_names, )
 
 def generate_certs(name, college_name) :
     im = Image.open('cert_template.png')
@@ -13,8 +13,8 @@ def generate_certs(name, college_name) :
     image.paste(im, mask=im.split()[3])
     d = ImageDraw.Draw(image)
     #coordinates
-    name_coord_x, name_coord_y = (1010,594)
-    of_coord_x, of_coord_y = (999,682)
+    name_coord_x, name_coord_y = (1010, 594)
+    of_coord_x, of_coord_y = (999, 682)
     college_name_coord_x, college_name_coord_y = (1001,749)
     text_color = '#000000'
     #fonts
